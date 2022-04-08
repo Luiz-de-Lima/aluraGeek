@@ -1,0 +1,43 @@
+@import '../../App.scss';
+
+.container {
+    width : 1440px;
+    height: 115px;
+    margin: 0 auto;
+}
+
+header {
+    max-width      : 1136px;
+    height         : 115px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    margin         : 0 auto;
+    color          : $color-input;
+
+    span {
+        color: $color-secondary;
+    }
+
+    input {
+        width        : 393px;
+        border       : none;
+        border-radius: 20px;
+        padding      : 8px 16px;
+        background   : $color-input;
+        margin-left  : 10px;
+    }
+
+    button {
+        width      : 182px;
+        padding    : 16px;
+        margin-left: auto;
+        border     : 1px solid $color-secondary;
+        color      : $color-input;
+        cursor: pointer;
+        &:hover{
+            filter: brightness(2.1);
+            color:#000;
+        }
+    }
+}
