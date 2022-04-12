@@ -1,9 +1,12 @@
 import React from 'react'
 import './styles.scss'
 
-const Buttons = () => {
+const Buttons = (props) => {
+
     return (
-        <></>
+        <>
+            <button>{props.children}</button>
+        </>
     )
 }
 

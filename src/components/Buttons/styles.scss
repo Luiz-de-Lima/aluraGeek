@@ -1,0 +1,16 @@
+@import"../../App.scss";
+
+button {
+    width           : 182px;
+    padding         : 16px;
+    margin-left     : auto;
+    border          : 1px solid $color-secondary;
+    color           : $color-input;
+    cursor          : pointer;
+    background-color: $color-secondary;
+
+    &:hover {
+        filter: brightness(1.5);
+        color : #000;
+    }
+}

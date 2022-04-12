@@ -1,22 +1,14 @@
-@import '../../App.scss';
-
-.container {
-    width : 1440px;
-    height: 115px;
-    margin: 0 auto;
-}
-
 header {
-    max-width      : 1136px;
-    height         : 115px;
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-    margin         : 0 auto;
-    color          : $color-input;
+    width           : 1136px;
+    height          : 115px;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    margin          : 0 auto;
+    background-color: rgb(155, 143, 143);
 
     span {
-        color: $color-secondary;
+        color: blue;
     }
 
     input {
@@ -24,20 +16,9 @@ header {
         border       : none;
         border-radius: 20px;
         padding      : 8px 16px;
-        background   : $color-input;
+        background   : #fff;
         margin-left  : 10px;
     }
 
-    button {
-        width      : 182px;
-        padding    : 16px;
-        margin-left: auto;
-        border     : 1px solid $color-secondary;
-        color      : $color-input;
-        cursor: pointer;
-        &:hover{
-            filter: brightness(2.1);
-            color:#000;
-        }
-    }
+
 }

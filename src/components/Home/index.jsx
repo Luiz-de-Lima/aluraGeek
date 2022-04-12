@@ -1,13 +1,16 @@
 import React from 'react';
+import Buttons from '../Buttons';
+import Inputs from '../Form/Inputs/inputs'
+import Logo from '../../../src/Logo.png'
 import './styles.scss'
 const Home = () => {
     return (
         <>
             <div className="container">
                 <header>
-                    <img src="../../assets/logo.png" alt="logo aluraGeek" />   <span>Alura</span>Geek
-                    <input type="search" name="search" id="" placeholder='o que deseja encontrar' />
-                    <button>Login</button>
+                    <img src={Logo} alt="logo aluraGeek" />
+                    <Inputs type="search" name="search" id="" placeholder='o que deseja encontrar?' />
+                    <Buttons>Login</Buttons>
                 </header>
             </div>
         </>

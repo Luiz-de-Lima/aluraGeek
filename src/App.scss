@@ -1,18 +1,28 @@
-$primary-color  :#464646;
+$primary-color  :#646363;
 $color-secondary:#2A7AE4;
 $color-input    :#F5F5F5;
+$form-color     :#2d2b2b;
+$footer-color: #EAF2FD;
 $L-device       :1440px;
 $m-device       :760px;
 $s-device       :480px;
 
 * {
-  background: $primary-color;
+  font-family: 'Raleway', sans-serif;
+}
+
+.App {
+  max-width       : $L-device;
+  margin          : 0 auto;
+  background-color: $primary-color;
+  height          : 100vh;
 }
 
 @mixin d($size) {
   @if $size==L {
     @media screen and (min-width: #{$L-device}) {
       @content;
+      background-color: $primary-color;
     }
   }
 
@@ -26,12 +36,5 @@ $s-device       :480px;
     @media screen and(max-width: 759px) {
       @content;
     }
-  }
-}
-
-button {
-
-  @include d(L) {
-    
   }
 }

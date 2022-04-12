@@ -1,0 +1,21 @@
+.container {
+    form {
+        width         : 423px;
+        margin        : 5.5rem auto;
+        display       : flex;
+        flex-direction: column;
+
+
+        p {
+            font-size  : 18px;
+            text-align : center;
+            font-weight: 600;
+        }
+
+        button {
+            background-color: #2A7AE4;
+            width           : 423px;
+            margin-top      : 24px;
+        }
+    }
+}
