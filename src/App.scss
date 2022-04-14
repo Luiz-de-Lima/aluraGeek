@@ -1,39 +1,41 @@
-$primary-color  :#646363;
-$color-secondary:#2A7AE4;
-$color-input    :#F5F5F5;
-$form-color     :#2d2b2b;
-$footer-color: #EAF2FD;
-$L-device       :1440px;
-$m-device       :760px;
-$s-device       :480px;
+$primary-color :#E5E5E5;
+;
+$color-secondary  :#2A7AE4;
+$color-input      :#F5F5F5;
+$form-color       :#2d2b2b;
+$footer-color     : #EAF2FD;
+$color-white      :#FFFFFF;
+$color-cinza-claro:#F5F5F5;
+$L-device         :1440px;
+$m-device         :809px;
+$s-device         :480px;
 
 * {
   font-family: 'Raleway', sans-serif;
+  box-sizing : border-box;
+
 }
 
 .App {
-  max-width       : $L-device;
-  margin          : 0 auto;
   background-color: $primary-color;
-  height          : 100vh;
 }
 
 @mixin d($size) {
   @if $size==L {
     @media screen and (min-width: #{$L-device}) {
       @content;
-      background-color: $primary-color;
+
     }
   }
 
   @else if $size==m {
-    @media screen and(min-width: #{$m-device}) and (max-width:1199px) {
+    @media screen and(min-width: #{$m-device}) {
       @content;
     }
   }
 
   @else if $size==s {
-    @media screen and(max-width: 759px) {
+    @media screen and(max-width: 767px) {
       @content;
     }
   }

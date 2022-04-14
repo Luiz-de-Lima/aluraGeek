@@ -1,24 +1,61 @@
-header {
-    width           : 1136px;
-    height          : 115px;
-    display         : flex;
-    justify-content : center;
-    align-items     : center;
-    margin          : 0 auto;
-    background-color: rgb(155, 143, 143);
+@import '../../App.scss';
 
-    span {
-        color: blue;
+.homecontainer {
+    width           : 1440px;
+    background-color: $color-white;
+
+    @include d(m) {
+        width: 812px;
+        padding: 1rem 2rem;
     }
 
-    input {
-        width        : 393px;
-        border       : none;
-        border-radius: 20px;
-        padding      : 8px 16px;
-        background   : #fff;
-        margin-left  : 10px;
-    }
+    header {
+        max-width      : 1136px;
+        height         : 115px;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        margin         : 0 auto;
 
+        @include d(m) {
+            margin: 0 auto;
+
+            .logo {
+                width: 100px;
+            }
+        }
+
+
+        input {
+            width        : 393px;
+            border       : none;
+            border-radius: 20px;
+            padding      : 8px 16px;
+            background   : $color-cinza-claro;
+            margin-left  : 10px;
+
+            @include d(m) {
+                width : 272px;
+                height: 40px;
+            }
+
+        }
+
+        button {
+            background-color: transparent;
+            color           : $color-secondary;
+
+            &:hover {
+                background-color: $color-secondary;
+                color           : $color-white;
+            }
+
+            @include d(m) {
+                width : 166px;
+                height: 40px;
+
+            }
+        }
+    }
 
 }

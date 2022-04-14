@@ -1,10 +1,22 @@
-.container {
+@import '../../App.scss';
+
+.form-container {
+    width: $L-device;
+
+    @include d(m) {
+        width: 812px;
+
+    }
+
     form {
         width         : 423px;
         margin        : 5.5rem auto;
         display       : flex;
         flex-direction: column;
 
+        @include d(m) {
+            width: 275px;
+        }
 
         p {
             font-size  : 18px;
@@ -12,10 +24,21 @@
             font-weight: 600;
         }
 
+        input {
+            outline      : none;
+            margin-bottom: 1rem
+        }
+
         button {
             background-color: #2A7AE4;
             width           : 423px;
             margin-top      : 24px;
+
+            @include d(m) {
+                width : 109px;
+                margin: 0 auto;
+            }
+
         }
     }
 }

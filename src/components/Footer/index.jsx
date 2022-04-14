@@ -8,16 +8,16 @@ const Footer = () => {
         <>
         <section>
             <div className="container">
-                <div className="logo">
-                    <img src={Logo} alt="logo aluraGeek" />
-                </div>
+            
                 <div className="links">
+                <img src={Logo} alt="logo aluraGeek" />
                     <ul>
                         <li>Quem Somos</li>
                         <li>Política de privacidade</li>
                         <li>Programa de fidelidade</li>
                         <li>Nossas lojas</li>
                         <li>Quero ser franqueado</li>
+                        <li>Anuncie aqui</li>
                     </ul>
                 </div>
                 <div className="fale-conosco">

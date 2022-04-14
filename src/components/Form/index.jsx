@@ -6,7 +6,7 @@ import './styles.scss'
 
 const Form = () => {
     return (
-        <div className='container'>
+        <div className='form-container'>
             <form action="">
                 <p>Iniciar Sessão</p>
                 <Inputs type="email" label="email" placeholder="Escreva seu email" size="large" />
