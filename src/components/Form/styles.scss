@@ -1,12 +1,11 @@
 @import '../../App.scss';
 
 .form-container {
-    width: $L-device;
 
     @include d(m) {
         width: 812px;
-
     }
+
 
     form {
         width         : 423px;
@@ -40,5 +39,9 @@
             }
 
         }
+    }
+
+    @include d(s) {
+        width: 375px;
     }
 }

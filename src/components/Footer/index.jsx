@@ -6,32 +6,34 @@ import './styles.scss'
 const Footer = () => {
     return (
         <>
-        <section>
-            <div className="container">
-            
-                <div className="links">
-                <img src={Logo} alt="logo aluraGeek" />
-                    <ul>
-                        <li>Quem Somos</li>
-                        <li>Política de privacidade</li>
-                        <li>Programa de fidelidade</li>
-                        <li>Nossas lojas</li>
-                        <li>Quero ser franqueado</li>
-                        <li>Anuncie aqui</li>
-                    </ul>
-                </div>
-                <div className="fale-conosco">
-                    <p>Fale conosco</p>
-                    <Inputs type="text" className="teste" />
-                    <textarea placeholder='escreva sua mensagem'>
-                    </textarea>
-                    <Buttons>Enviar mensagem</Buttons>
+            <section>
+                <div className="container">
+
+                    <div className="links">
+                        <div className='logo'>
+                            <img src={Logo} alt="logo aluraGeek" />
+                        </div>
+                        <ul>
+                            <li>Quem Somos</li>
+                            <li>Política de privacidade</li>
+                            <li>Programa de fidelidade</li>
+                            <li>Nossas lojas</li>
+                            <li>Quero ser franqueado</li>
+                            <li>Anuncie aqui</li>
+                        </ul>
+                    </div>
+                    <div className="fale-conosco">
+                        <p>Fale conosco</p>
+                        <Inputs type="text" className="teste" />
+                        <textarea placeholder='escreva sua mensagem'>
+                        </textarea>
+                        <Buttons>Enviar mensagem</Buttons>
+                    </div>
+
                 </div>
 
-            </div>
-            
-        </section>
-        <footer className="copy">
+            </section>
+            <footer className="copy">
                 <p>Desenvolvido por <span>Luiz de Lima</span></p>
                 <p>2022</p>
             </footer>

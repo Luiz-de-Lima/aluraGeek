@@ -1,12 +1,18 @@
 @import '../../App.scss';
 
 .homecontainer {
-    width           : 1440px;
+
     background-color: $color-white;
+    padding         : 2rem 0;
 
     @include d(m) {
-        width: 812px;
+        width  : 812px;
         padding: 1rem 2rem;
+    }
+
+    @include d(s) {
+        width: 360px;
+
     }
 
     header {
@@ -15,7 +21,7 @@
         display        : flex;
         justify-content: center;
         align-items    : center;
-        margin         : 0 auto;
+
 
         @include d(m) {
             margin: 0 auto;
@@ -25,6 +31,12 @@
             }
         }
 
+        @include d(s) {
+            width          : 100%;
+            display        : flex;
+            justify-content: space-between;
+        }
+
 
         input {
             width        : 393px;
@@ -32,11 +44,15 @@
             border-radius: 20px;
             padding      : 8px 16px;
             background   : $color-cinza-claro;
-            margin-left  : 10px;
+            margin-left  : 2rem;
 
             @include d(m) {
                 width : 272px;
                 height: 40px;
+            }
+
+            @include d(s) {
+                display: none;
             }
 
         }
@@ -54,6 +70,10 @@
                 width : 166px;
                 height: 40px;
 
+            }
+
+            @include d(s) {
+                width: 133px;
             }
         }
     }

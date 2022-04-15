@@ -7,7 +7,7 @@ $footer-color     : #EAF2FD;
 $color-white      :#FFFFFF;
 $color-cinza-claro:#F5F5F5;
 $L-device         :1440px;
-$m-device         :809px;
+$m-device         :811px;
 $s-device         :480px;
 
 * {
@@ -16,9 +16,6 @@ $s-device         :480px;
 
 }
 
-.App {
-  background-color: $primary-color;
-}
 
 @mixin d($size) {
   @if $size==L {
@@ -29,7 +26,7 @@ $s-device         :480px;
   }
 
   @else if $size==m {
-    @media screen and(min-width: #{$m-device}) {
+    @media screen and(max-width: #{$m-device}) {
       @content;
     }
   }
@@ -39,4 +36,8 @@ $s-device         :480px;
       @content;
     }
   }
+}
+
+.App {
+  background-color: $primary-color;
 }
