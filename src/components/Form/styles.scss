@@ -6,6 +6,10 @@
         width: 812px;
     }
 
+    @include d(s) {
+        width: 100%;
+    }
+
 
     form {
         width         : 423px;
@@ -42,6 +46,6 @@
     }
 
     @include d(s) {
-        width: 375px;
+        width: 100%;
     }
 }

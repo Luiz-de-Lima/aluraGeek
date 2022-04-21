@@ -9,8 +9,10 @@ const Home = () => {
         <>
             <div className="homecontainer">
                 <header>
-                    <img src={Logo} alt="logo aluraGeek" className="logo" />
-                    <Inputs type="search" name="search" id="" placeholder='o que deseja encontrar?' />
+                    <div className='alura'>
+                        <img src={Logo} alt="logo aluraGeek" className="logo" />
+                        <Inputs type="search" name="search" id="" placeholder='o que deseja encontrar?' />
+                    </div>
                     <Buttons>Login</Buttons>
                 </header>
             </div>

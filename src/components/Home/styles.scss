@@ -1,9 +1,10 @@
 @import '../../App.scss';
 
 .homecontainer {
-
     background-color: $color-white;
-    padding         : 2rem 0;
+    width           : 100%;
+    height          : 115px;
+
 
     @include d(m) {
         width  : 812px;
@@ -11,20 +12,29 @@
     }
 
     @include d(s) {
-        width: 360px;
+        width: 100%;
 
     }
 
     header {
-        max-width      : 1136px;
+        width          : 1136px;
         height         : 115px;
         display        : flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items    : center;
+        margin         : 0 auto;
 
+        .alura {
+            display    : flex;
+            width      : 601px;
+            height     : 50px;
+            align-items: center;
+        }
 
         @include d(m) {
-            margin: 0 auto;
+            width : 100%;
+            height: 72px;
+
 
             .logo {
                 width: 100px;
